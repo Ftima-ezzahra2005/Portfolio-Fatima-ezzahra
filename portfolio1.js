@@ -13,3 +13,9 @@ const observer = new IntersectionObserver(entries => {
 
 cards.forEach(card => observer.observe(card));
 skills.forEach(skill => observer.observe(skill));
+
+document.querySelector(".menu-toggle")
+  .addEventListener("click", () => {
+    document.querySelector("nav ul")
+      .classList.toggle("active");
+  });
